@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+  
+  <keyboard>
+  
+      <!-- ###### -->   
+	  <!--
+    <key n="101">
+      <name>e</name>
+      <desc>Rockets</desc>
+      <binding>
+        <command>nasal</command>
+        <script>guns.fire_Rocket()</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>guns.stop_Rocket()</script>
+        </binding>
+      </mod-up>
+    </key>
+	-->
+    
+    <key n="102">
+      <name>f</name>
+      <desc>Gun trigger</desc> 
+      <binding>
+        <command>nasal</command>
+        <script>guns.fire_MG()</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>guns.stop_MG()</script>
+        </binding>
+      </mod-up>
+    </key>   
+    <!-- ###### -->
+    
+    <key n="100">
+      <name>d</name>
+      <desc>Crew door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </key>
+    
+    <key n="68">
+      <name>D</name>
+      <desc>Passenger door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </key>
+    <!--
+    <key n="101">
+      <name>e</name>
+      <desc>Windows</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.windows.toggle();</script>
+      </binding>
+    </key>
+    -->
+    <key n="69">
+      <name>E</name>
+      <desc>Bay</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.bay.toggle();</script>
+      </binding>
+    </key>
+    
+    <key n="78">
+      <name>N</name>
+      <desc>Toggle rotor brake</desc>
+      <binding>
+        <command>nasal</command>
+        <script>
+          var p = "/controls/rotor/brake";
+          setprop(p, !getprop(p));
+        </script>
+      </binding>
+    </key>
+    
+    <key n="110">
+      <name>n</name>
+      <desc>Apply rotor brake</desc>
+      <binding>
+        <command>nasal</command>
+        <script>interpolate("/controls/rotor/brake", 1.0, 2)</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>interpolate("/controls/rotor/brake", 0.0, 2)</script>
+        </binding>
+      </mod-up>
+    </key>
+    
+    <key n="123">
+      <name>{</name>
+      <desc>Shutdown Engines</desc>
+      <binding>
+        <command>nasal</command>
+        <script>uh60.engines(0)</script>
+      </binding>
+    </key>
+    <!--
+    <key n="125">
+      <name>}</name>
+      <desc>Start Engines</desc>
+      <binding>
+        <command>nasal</command>
+        <script>uh60.engines(1)</script>
+      </binding>
+    </key>
+	-->
+	
+	 <key n="126">
+      <name>u</name>
+      <desc>Modif</desc>
+      <binding>
+        <command>nasal</command>
+        <script>
+		 var aileron = props.globals.getNode("/controls/flight/aileron");
+		 aileron.setValue(1.0);
+		  
+		</script>
+      </binding>
+    </key>
+	
+	
+  </keyboard>
+  
+</PropertyList>
