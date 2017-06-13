@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<import>
+		<path>Huds/Instruments/modif_date.xml</path>
+		<x-offset>-210</x-offset>
+	</import>
+	
+		<import>
+		<path>Huds/Instruments/modif_date.xml</path>
+		<x-offset>210</x-offset>
+	</import>
+
+
+</PropertyList>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<import>
+		<path>Huds/Instruments/cam.xml</path>
+		<x-offset>0</x-offset>
+	</import>
+
+
+</PropertyList>
